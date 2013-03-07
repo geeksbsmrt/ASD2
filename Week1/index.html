@@ -9,7 +9,7 @@
 
 	<meta charset="utf-8">
 	
-	<title></title>
+	<title>Work Orders</title>
 	
 	<!--  Mobile view -->
 	<meta name="HandheldFriendly" content="True">
@@ -20,14 +20,62 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- JQuery, JQM -->
 	<script type="text/javascript" src="js/libs/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.mobile-1.3.0.min.js"></script>
 </head>
 <body>
-	
+	<section id="home" data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Work Orders</h1>
+		</header>
+		<section>
+			<a href="#details">WO Details</a>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#add">Add New WO</a></li>
+				</ul>
+			</div>
+		</footer>
+	</section> <!-- end Home -->
+	<section id="details" data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Work Order Details</h1>
+		</header>
+		<section>
+			<h2>Under Construction</h2>
+			<p>This page is currently under construction.  Please check back later</p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#add">Add New WO</a></li>
+				</ul>
+			</div>
+		</footer>
+	</section> <!-- end Details -->
+	<section id="add" data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Add New WO</h1>
+		</header>
+		<section>
+
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#add" class="ui-btn-active ui-state-persist">Add New WO</a></li>
+				</ul>
+			</div>
+		</footer>
+	</section> <!-- end Add -->
 	<!-- JS -->
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
