@@ -2,3 +2,21 @@
 	Adam Crawford
 	ASD 0313 Week 1
 */
+
+#home section a {
+	margin: 0px 0px 25px 0px;
+}
+
+#home section ul {
+	margin: 15px 0px 30px 0px;
+}
+
+#add fieldset {
+	border: 2px solid;
+	margin: 0px 5px 25px 5px;
+	padding: 0px 2px 15px 5px;
+}
+
+form textarea {
+	display: block;
+}

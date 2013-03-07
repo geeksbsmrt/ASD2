@@ -31,8 +31,20 @@
 		<header data-role="header" data-position="fixed">
 			<h1>Work Orders</h1>
 		</header>
-		<section>
-			<a href="#details">WO Details</a>
+		<section data-role="content">
+			<h2>Work Orders</h2>
+			<p>Mobile Work Order System</p>
+			<a href="#add" data-role="button">Add a new Work Order</a>
+			<div>
+				<ul data-role="listview" id="rush" data-filter="true" data-inset="true" data-filter-placeholder="Filter Rush Orders...">
+					<li>No Rush Orders!</li>
+				</ul>
+				<ul data-role="listview" id="reg" data-filter="true" data-inset="true" data-filter-placeholder="Filter Regular Orders...">
+					<li>No Regular Orders!</li>
+				</ul>
+			</div>
+			<a href="#" data-role="button" id="json" data-theme="e">Load JSON Data</a>
+			<a href="#" data-role="button" id="xml" data-theme="b">Load XML Data</a>
 		</section>
 		<footer data-role="footer" data-position="fixed">
 			<div data-role="navbar">
@@ -65,7 +77,33 @@
 			<h1>Add New WO</h1>
 		</header>
 		<section>
-
+			<p>All fields required</p>
+	    	<form action="" method="" >
+	    		<fieldset>
+	   				<legend>Client Information</legend>
+		    			<label for="fName">First Name: </label><input type="text" id="fName" name="fName" data-mini="true" class="required" />
+		    			<label for="lName">Last Name: </label><input type="text" id="lName" name="lName" data-mini="true" class="required" />
+		    			<label for="phone">Phone Number: </label><input type="tel" id="phone" name="phone" placeholder="555-555-5555" data-mini="true" class="required"/>
+		    			<label for="email">Email: </label><input type="email" id="email" name="email" placeholder="email@domain.com" data-mini="true" class="required email" />
+	   			</fieldset>
+	   			<fieldset>
+	   				<legend>Work Order Details</legend>
+	   				<input type="checkbox" value="HP" id="priority" name="priority" data-mini="true" /><label for="priority">Rush</label>
+	   				<label for="date">Due Date:</label>
+					<input type="date" name="date" id="date" data-mini="true" value="">
+					<label for="time">Time:</label>
+					<input type="time" name="time" id="time" data-mini="true">
+					<label for="subject">Subject:</label>
+					<input type="text" name="subject" id="subject" data-mini="true">
+					<label for="description">Description:</label>
+					<textarea name="description" id="description"></textarea>
+	   			</fieldset>
+	   			<fieldset>
+	   				<input type="submit" value="Submit">
+    				<input type="reset" value="Reset">
+    			</fieldset>
+	   			
+	   		</form>
 		</section>
 		<footer data-role="footer" data-position="fixed">
 			<div data-role="navbar">
@@ -77,6 +115,8 @@
 		</footer>
 	</section> <!-- end Add -->
 	<!-- JS -->
+	<script type="text/javascript" src="js/libs/jkl-parsexml.js"></script>
+	<script type="text/javascript" src="js/libs/objSort.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
