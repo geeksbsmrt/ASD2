@@ -4,11 +4,11 @@
 */
 
 #home section a {
-	margin: 0px 0px 25px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 #home section ul {
-	margin: 15px 0px 30px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 #add fieldset {
@@ -17,6 +17,21 @@
 	padding: 0px 2px 15px 5px;
 }
 
+.ui-listview-filter {
+	margin: 15px 0px 0px 0px;
+}
+
 form textarea {
 	display: block;
+}
+
+label.error {
+	display:block;
+	margin-top:10px;
+	color: #ff0000;
+	border: none;
+}
+
+#details li {
+	list-style: none;
 }
