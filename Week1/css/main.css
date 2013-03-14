@@ -3,8 +3,8 @@
 	ASD 0313 Week 1
 */
 
-#home section a {
-	margin: 0px 0px 0px 0px;
+#home section>a {
+	margin-top: 15px;
 }
 
 #home section ul {
@@ -34,4 +34,16 @@ label.error {
 
 #details li {
 	list-style: none;
+}
+
+#home section>div {
+	margin-bottom: 15px;
+}
+
+#add fieldset:nth-child(3) {
+	border: none
+}
+
+#add fieldset:nth-child(3) div {
+	margin-top: 15px
 }
