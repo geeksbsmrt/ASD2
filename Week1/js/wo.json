@@ -4,7 +4,7 @@ var workOrders = {
 		"lName": "Crawford",
 		"phone": "555-555-5555",
 		"email": "email@domain.com",
-		"priority": "true",
+		"priority": "on",
 		"date": "2013-03-12",
 		"time": "23:59",
 		"subject": "Complete CRUD Function",
@@ -19,7 +19,7 @@ var workOrders = {
 		"date": "2013-03-31",
 		"time": "23:59",
 		"subject": "Make it pretty",
-		"description": "Increase visual appeal of application.  Create and implement a theme.  Add images and build a true CTA."
+		"description": "Increase visual appeal of application.  Create and implement a theme.  Add images and build a CTA."
 	},
 	"wO3" : {
 		"fName": "Adam",
@@ -37,7 +37,7 @@ var workOrders = {
 		"lName": "Crawford",
 		"phone": "555-555-5555",
 		"email": "email@domain.com",
-		"priority": "true",
+		"priority": "on",
 		"date": "2013-03-15",
 		"time": "17:00",
 		"subject": "Apply for passports",
