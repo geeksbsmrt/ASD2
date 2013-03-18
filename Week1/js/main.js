@@ -114,7 +114,7 @@
             //loadJSON();
             console.log("JSON Data Loaded");
             displayStorage();
-            //$("#home").trigger('refresh');
+            $("#home").trigger('refresh');
         });
 
         //Click XML Button
