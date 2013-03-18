@@ -103,7 +103,7 @@
         $('#json').on('click', function(){
             console.log("loadJSON clicked");
             $.ajax({
-                url: '../XHR/json.php',
+                url: 'XHR/json.php',
                 async: false,
                 type: 'GET',
                 dataType: 'json',
@@ -114,7 +114,7 @@
             //loadJSON();
             console.log("JSON Data Loaded");
             displayStorage();
-            $("#home").trigger('refresh');
+            //$("#home").trigger('refresh');
         });
 
         //Click XML Button
