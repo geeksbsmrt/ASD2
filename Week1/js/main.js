@@ -103,7 +103,7 @@
         $('#json').on('click', function(){
             console.log("loadJSON clicked");
             $.ajax({
-                url: 'XHR/json.php',
+                url: '../XHR/json.php',
                 async: false,
                 type: 'GET',
                 dataType: 'json',
@@ -132,7 +132,7 @@
         });
 
         //Click details
-        $("#home ul a").on('click', function (e) {
+        $("#home section ul a").on('click', function (e) {
             e.preventDefault();
             $.mobile.changePage("#details",{changeHash: false})
         })
