@@ -5,7 +5,7 @@
 			<lName>Crawford</lName>
 			<phone>555-555-5555</phone>
 			<email>email@domain.com</email>
-			<priority>true</priority>
+			<priority>on</priority>
 			<date>2013-03-12</date>
 			<time>23:59</time>
 			<subject>Complete CRUD Function</subject>
@@ -38,7 +38,7 @@
 			<lName>Crawford</lName>
 			<phone>555-555-5555</phone>
 			<email>email@domain.com</email>
-			<priority>true</priority>
+			<priority>on</priority>
 			<date>2013-03-15</date>
 			<time>17:00</time>
 			<subject>Apply for passports</subject>
