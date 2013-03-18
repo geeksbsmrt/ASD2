@@ -31,7 +31,7 @@
 		<section data-role="content">
 			<h2>Work Orders</h2>
 			<p>Mobile Work Order System</p>
-			<a href="#add" data-role="button">Add a new Work Order</a>
+			<a href="#add" data-role="button" id='new'>Add a new Work Order</a>
 			<div>
 				<ul data-role="listview" id="rush" data-mini="true" data-filter="true" data-inset="true" data-filter-placeholder="Filter Rush Orders...">
 					<li>No Rush Orders!</li>
@@ -74,8 +74,8 @@
 			<h1>Add New WO</h1>
 		</header>
 		<section>
-			<p>All fields required</p>
-	    	<form action="#" method="post" >
+			<!-- <p>All fields required</p>
+	    	<form action="#" method="post" id="create">
 	    		<fieldset>
 	   				<legend>Client Information</legend>
 		    			<label for="fName">First Name: </label><input type="text" id="fName" name="fName" data-mini="true" class="required" />
@@ -96,12 +96,12 @@
 					<textarea name="description" id="description"></textarea>
 	   			</fieldset>
 	   			<fieldset>
-	   				<input type="submit" value="Submit" id="submit" data-mini="true" data-theme="b" />
+	   				<input type="submit" value="Submit" id="save" data-mini="true" data-theme="b" />
     				<input type="reset" value="Reset" id="reset" data-mini="true" data-theme="a" />
     			</fieldset>
 	   			
-	   		</form>
-		</section>
+	   		</form> -->
+		 </section>
 		<footer data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
@@ -110,7 +110,7 @@
 				</ul>
 			</div>
 		</footer>
-	</section> <!-- end Add -->
+	</section><!-- end Add -->
 	<!-- JS -->
 		<!-- JQuery, JQM -->
 	<script type="text/javascript" src="js/libs/jquery-1.9.1.min.js"></script>
@@ -118,7 +118,7 @@
 	<script type="text/javascript" src="js/libs/jquery.validate.js"></script>
 	<script type="text/javascript" src="js/libs/jkl-parsexml.js"></script>
 	<script type="text/javascript" src="js/libs/objSort.js"></script>
-	<script type="text/javascript" src="js/wo.json"></script>
+	<!--<script type="text/javascript" src="js/wo.json"></script>-->
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

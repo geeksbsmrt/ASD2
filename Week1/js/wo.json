@@ -1,5 +1,4 @@
-var workOrders = {
-	"wO1" : {
+{  	"wO1" : {
 		"fName": "Adam",
 		"lName": "Crawford",
 		"phone": "555-555-5555",
