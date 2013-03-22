@@ -19,8 +19,8 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<section id="home" data-role="page">
@@ -38,10 +38,13 @@
 				<ul data-role="listview" id="reg" data-mini="true" data-filter="true" data-inset="true" data-filter-placeholder="Filter Regular Orders...">
 					<li>No Regular Orders!</li>
 				</ul>
+				<ul data-role="listview" id="comp" data-mini="true" data-filter="true" data-inset="true" data-filter-placeholder="Filter Completed Orders...">
+					<li>No Completed Work Orders</li>
+				</ul>
 			</div>
-			<a href="#" data-role="button" id="json" data-theme="e">Load JSON Data</a>
-			<a href="#" data-role="button" id="xml" data-theme="b">Load XML Data</a>
-			<a href="#" data-role="button" id="clear" data-theme="a">Clear Local Storage</a>
+			<a href="#" data-role="button" id="db" data-theme="e">Load CouchDB Data</a>
+			<!-- <a href="#" data-role="button" id="xml" data-theme="b">Load XML Data</a>
+			<a href="#" data-role="button" id="clear" data-theme="a">Clear Local Storage</a> -->
 		</section>
 		<footer data-role="footer" data-position="fixed">
 			<div data-role="navbar">
@@ -112,12 +115,9 @@
 	</section><!-- end Add -->
 	<!-- JS -->
 		<!-- JQuery, JQM -->
-	<script type="text/javascript" src="js/libs/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/libs/jquery.mobile-1.3.0.min.js"></script>
-	<script type="text/javascript" src="js/libs/jquery.validate.js"></script>
-	<script type="text/javascript" src="js/libs/jkl-parsexml.js"></script>
-	<script type="text/javascript" src="js/libs/objSort.js"></script>
-	<!--<script type="text/javascript" src="js/wo.json"></script>-->
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

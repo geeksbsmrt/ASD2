@@ -1,0 +1,49 @@
+/*
+	Adam Crawford
+	ASD 0313 Week 1
+*/
+
+#home section>a {
+	margin-top: 15px;
+}
+
+#home section ul {
+	margin: 0px 0px 0px 0px;
+}
+
+#add fieldset {
+	border: 2px solid;
+	margin: 0px 5px 25px 5px;
+	padding: 0px 2px 15px 5px;
+}
+
+.ui-listview-filter {
+	margin: 15px 0px 0px 0px;
+}
+
+form textarea {
+	display: block;
+}
+
+label.error {
+	display:block;
+	margin-top:10px;
+	color: #ff0000;
+	border: none;
+}
+
+#details li {
+	list-style: none;
+}
+
+#home section>div {
+	margin-bottom: 15px;
+}
+
+#add fieldset:nth-child(3) {
+	border: none
+}
+
+#add fieldset:nth-child(3) div {
+	margin-top: 15px
+}
