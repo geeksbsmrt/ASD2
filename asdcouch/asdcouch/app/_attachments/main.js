@@ -233,12 +233,16 @@
                 submitHandler: function() {
                     var data = form.serializeArray(),
                         key = $("#save").attr("key");
-                    $.couch.db("asdwo").openDoc(key, {
-                        success: function (returned) {
-                            var rev = returned._rev;
-                            storeData(data, key, rev);
-                        }
-                    })
+                    if (!key) {
+                        storeData(data)
+                    } else {
+                        $.couch.db("asdwo").openDoc(key, {
+                            success: function (returned) {
+                                var rev = returned._rev;
+                                storeData(data, key, rev);
+                            }
+                        })
+                    }
                 }
             })
             
